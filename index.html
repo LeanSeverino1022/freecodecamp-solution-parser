@@ -21,14 +21,14 @@
 
 <body>
   
-  <main style="display: flex; align-content: stretch">
-    <div id="main-left-col" style="flex-basis: 30%; ">
-        <form class="left-col" style="display: flex; flex-direction: column">
+  <main>
+    <div id="main-left-col">
+        <form class="left-col">
             <div id="drop-area">
                 <input type="file" id="files">
                 <p>Drag your file or click inside the dotted box to load your downloaded Freecodecamp solution.</p>
             </div>
-            <span style="margin: 0 auto; text-align: center">OR paste the content of the downloaded JSON into the textarea below </span>
+            <p style="text-align: center">OR paste the content of the downloaded JSON into the textarea below </p>
             <textarea>{"index.js":"let x = 7;\nlet y = 9;\nlet result = \"to come\";\n\nif(x == y) {\n  result = \"Equal!\";\n} else {\n  result = \"Not equal!\";\n}\n\nconsole.log(result);"}</textarea>
             <button class="parse">Parse Solution</button>
           </form>
