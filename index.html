@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Examples</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  
+  <main style="display: flex; align-content: stretch">
+    <div id="main-left-col" style="flex-basis: 30%; ">
+        <form class="left-col" style="display: flex; flex-direction: column">
+            <div id="drop-area">
+                <input type="file" id="files">
+                <p>Drag your file or click inside the dotted box to load your downloaded Freecodecamp solution.</p>
+            </div>
+            <span style="margin: 0 auto; text-align: center">OR paste the content of the downloaded JSON into the textarea below </span>
+            <textarea>{"index.js":"let x = 7;\nlet y = 9;\nlet result = \"to come\";\n\nif(x == y) {\n  result = \"Equal!\";\n} else {\n  result = \"Not equal!\";\n}\n\nconsole.log(result);"}</textarea>
+            <button class="parse">Parse Solution</button>
+          </form>
+    </div>
+    <div id="main-right-col">
+      <span class="message"></span>
+        <textarea class="solution"></textarea>
+      </div>
+  
+      
+
+    </div>
+
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
