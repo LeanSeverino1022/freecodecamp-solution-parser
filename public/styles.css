@@ -3,12 +3,14 @@
     margin: 0;
 }
 
-/* html, body, main, .left-col, #main-left-col {
+html, body, main, .left-col, #main-left-col {
     height: 100%;
-} */
+}
 
 body {
-    font: 14px/20px 'Roboto Mono',monospace;   
+    font: 14px/20px 'Roboto Mono',monospace;
+   /* font-size: 11.2px;
+    */
 }
 
 #main-left-col{
@@ -27,7 +29,7 @@ form p {
 /* left column textarea and droparea */
 #drop-area {
     width: 90%;
-    height: 280px;
+    height: 50%;
     margin-top: 5px;
     position: relative;
     border: 4px dashed #999799;
@@ -61,7 +63,7 @@ button:hover{
 }
 
 .left-col textarea {
-    height: 200px;
+    height: 50%;
     resize: none;
     padding: 10px;
 }
@@ -71,7 +73,7 @@ button:hover{
     height: auto;
     overflow: auto;
     resize: none;
-    height: 500px;
+    height: 60%;
 }
 
 .message {
@@ -86,4 +88,3 @@ button:hover{
     margin-bottom: 20px;
     transition: all 1s ease-out;
 }
-
