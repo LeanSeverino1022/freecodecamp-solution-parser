@@ -1,40 +1,69 @@
-*{
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
     padding: 0;
     margin: 0;
 }
+
 
 html, body, main, .left-col, #main-left-col {
     height: 100%;
 }
 
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
 body {
-    font: 14px/20px 'Roboto Mono',monospace;
-   /* font-size: 11.2px;
+    font-family: 'Anonymous Pro', monospace;   /* font-size: 11.2px;
     */
+    max-width: 52rem;
+    margin: 0 auto;
+ 
+}
+
+header {
+    height: 20%;
+    overflow: hidden; /* prevent margin collapsing */
 }
 
 /* LAYOUT STYLES / LAYOUT CONTAINERS */
 
 main {
-    display: flex; 
+    display: flex;
     align-content: stretch;
+    height: 80%;
+    padding-bottom: 20px;
 }
 
 
-#main-left-col{    
-    flex-basis: 30%;
-    background:#f2f4f8;
-    color: #424242;
+#main-left-col{
+    width: 40%;
+    /* background:#f2f4f8; */
+    color: #000;
 }
 
 #main-right-col {
-    width: 100%;
+    width: 60%;
     margin: 0;
-    padding: 10px 25px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 form {
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
 
@@ -48,13 +77,13 @@ form {
 
 /* left column textarea and droparea */
 #drop-area {
-    width: 90%;
-    height: 50%;
-    margin-top: 5px;
+    width: 100%;
+    height: 40%;
+   
     position: relative;
-    border: 4px dashed #999799;
+    border: 3px dashed #000;
     overflow: auto;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 #drop-area input {
@@ -66,10 +95,10 @@ form {
 button {
     border: none;
     padding: 6px 12px;
-    color: #666;
+    color: #fff;
     font-size: 1.1487em;
-    line-height: 1.2;  
-    background-color: #BDD358;
+    line-height: 1.2;
+    background-color: #000;
 }
 
 button:hover{
@@ -80,19 +109,23 @@ button:hover{
     height: 50%;
     resize: none;
     padding: 10px;
+    font-size: .8rem;
+    border: 2px solid #000;
 }
 
-.solution{
+.solution {
+    flex-grow: 1;
     width: 100%;
     height: auto;
     overflow: auto;
     resize: none;
     height: 60%;
+    border: 2px solid #000;
 }
 
 .message {
     height: 50px;
-    background: #BDD358;
+    background: #000;
     display: block;
     width: 100%;
     line-height: 50px;

@@ -9,9 +9,9 @@ const parser = (function() {
     const jsonInput = document.querySelector('.left-col textarea');
 
     //REGISTER EVENT HANDLERS
-    document
-        .querySelector('#drop-area p')
+    document.querySelector('#drop-area p')
         .addEventListener('click', function() {
+            //trigger the hidden choose file button
             document.getElementById('files').click();
         });
 
@@ -37,6 +37,8 @@ const parser = (function() {
 
             if (isValidJSON(content)) {
                 let obj = JSON.parse(content);
+                //given that index.js property is common to all json files 
+                 //  {"index.js":"let x = 7...
                 showReadableSolution(obj['index.js']);
 
                 copyToClipboard();
@@ -51,7 +53,9 @@ const parser = (function() {
 
         if (isValidJSON(json)) {
             let obj = JSON.parse(json);
-            showReadableSolution(obj['index.js']);
+             //given that index.js property is common to all json files 
+            //  {"index.js":"let x = 7...
+            showReadableSolution(obj['index.js']); 
 
             copyToClipboard();
         }
@@ -88,7 +92,7 @@ const parser = (function() {
         try {
             var successful = document.execCommand('copy');
             var msg = successful
-                ? 'Copied to Clipboard'
+                ? 'Copied to Clipboard' 
                 : 'Manually Copy the code';
             showMessage(0, msg);
         } catch (err) {
