@@ -10,7 +10,7 @@
   <meta name="keywords" content="">
   <link href="" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
 
@@ -24,26 +24,29 @@
 
   <header>
     <h1>Freecodecamp JSON solution parser</h1>
-    <p>When you download the FCC curriculum solutions, you get a .json file with content that's not very readable. I created this tool to covert those JSON file to readable code.</p>
+    <p>When you download the FCC curriculum solutions, you get a .json file with content that's not very readable. I
+      created this tool to covert those JSON file to readable code.</p>
   </header>
   <main>
 
 
     <div id="main-left-col">
-        <form class="left-col">
-            <div id="drop-area">
-                <input type="file" id="files">
-                <p><span>Option 1:</span>Drag your file or click inside the dotted box to load your downloaded Freecodecamp solution.</p>
-            </div>
-            <p style="text-align: center; margin-bottom: .8rem">OR paste the content of the downloaded JSON into the textarea below </p>
-            <textarea>{"index.js":"let x = 7;\nlet y = 9;\nlet result = \"to come\";\n\nif(x == y) {\n  result = \"Equal!\";\n} else {\n  result = \"Not equal!\";\n}\n\nconsole.log(result);"}</textarea>
-            <button class="parse">Parse Solution</button>
-          </form>
+      <form class="left-col">
+        <div id="drop-area">
+          <input type="file" id="files">
+          <p><span>Option 1:</span>Drag your file or click inside the dotted box to load your downloaded Freecodecamp
+            solution.</p>
+        </div>
+        <p style="text-align: center; margin-bottom: .8rem">OR paste the content of the downloaded JSON into the
+          textarea below </p>
+        <textarea>{"index.js":"let x = 7;\nlet y = 9;\nlet result = \"to come\";\n\nif(x == y) {\n  result = \"Equal!\";\n} else {\n  result = \"Not equal!\";\n}\n\nconsole.log(result);"}</textarea>
+        <button class="parse">Parse Solution</button>
+      </form>
     </div>
     <div id="main-right-col">
       <span class="message">Output goes here 👇</span>
-        <textarea class="solution"></textarea>
-      </div>
+      <textarea class="solution"></textarea>
+    </div>
 
 
 
