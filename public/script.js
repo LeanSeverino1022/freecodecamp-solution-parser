@@ -80,7 +80,7 @@ const parser = (function() {
         let color = { GREEN: 0, RED: 1 };
 
         if (type === color.RED) statusMessage.style.backgroundColor = '#E5625E';
-        else statusMessage.style.backgroundColor = '#BDD358';
+        else statusMessage.style.backgroundColor = '#58c371';
 
         statusMessage.textContent = text;
     }

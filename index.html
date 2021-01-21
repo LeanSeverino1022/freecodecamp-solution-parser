@@ -23,7 +23,7 @@
 <body>
 
   <header>
-    <h1>Freecodecamp JSON solution parser</h1>
+    <h1><a href="https://www.freecodecamp.org/">Freecodecamp</a> JSON solution parser</h1>
     <p>When you download the FCC curriculum solutions, you get a .json file with content that's not very readable. I
       created this tool to covert those JSON file to readable code.</p>
   </header>
@@ -32,13 +32,17 @@
 
     <div id="main-left-col">
       <form class="left-col">
-        <div id="drop-area">
+        <div id="drop-area" class="sm-d-none">
           <input type="file" id="files">
           <p><span>Option 1:</span>Drag your file or click inside the dotted box to load your downloaded Freecodecamp
             solution.</p>
         </div>
-        <p style="text-align: center; margin-bottom: .8rem">OR paste the content of the downloaded JSON into the
+        <p class="sm-d-none" style="text-align: center; margin-bottom: .8rem">OR paste the content of the downloaded JSON into the
           textarea below </p>
+
+        <p style="text-align: left; margin-bottom: .8rem">Paste the content of the downloaded JSON into the
+          textarea below </p>
+
         <textarea>{"index.js":"let x = 7;\nlet y = 9;\nlet result = \"to come\";\n\nif(x == y) {\n  result = \"Equal!\";\n} else {\n  result = \"Not equal!\";\n}\n\nconsole.log(result);"}</textarea>
         <button class="parse">Parse Solution</button>
       </form>

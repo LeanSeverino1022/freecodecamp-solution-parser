@@ -1,0 +1,4 @@
+
+Jan 2021
+
+- I see that FCC has alrady fixed the issue of downloaded solutions are in JSON. Right now you can download the solutions in an easy-to-read text file so this tools seems to be not needed anymore.
