@@ -214,4 +214,12 @@ button:hover{
     .sm-d-none {
         display: none; 
     }
+   
+}
+
+@media (min-width: 768px) {
+    .md-d-none {
+        display: none; 
+    }
+   
 }
